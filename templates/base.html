@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="{{ request.session.lang|default:'ru' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if request.session.lang == 'kz' %}Оптика{% else %}Оптика{% endif %} - Educational Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=1.1">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{% url 'home' %}" class="nav-brand">
+                <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="50" r="25" stroke="var(--secondary)" stroke-width="4" stroke-dasharray="5 5"/>
+                    <circle cx="60" cy="50" r="25" stroke="var(--accent)" stroke-width="4" stroke-dasharray="5 5"/>
+                    <path d="M10 50H90" stroke="url(#paint0_linear)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M45 40L55 50L45 60" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="50" x2="90" y2="50" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="var(--secondary)"/>
+                            <stop offset="1" stop-color="var(--accent)"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Optika</span>
+            </a>
+            <div class="nav-links">
+                <a href="{% url 'about' %}">{% if request.session.lang == 'kz' %}Оптика туралы{% else %}Об оптике{% endif %}</a>
+                
+                {% if user.is_authenticated %}
+                    <a href="{% url 'home' %}">{% if request.session.lang == 'kz' %}Дәрістер{% else %}Лекции{% endif %}</a>
+                    <a href="{% url 'profile' %}">{% if request.session.lang == 'kz' %}Профиль{% else %}Профиль{% endif %}</a>
+                    <a href="{% url 'logout' %}">{% if request.session.lang == 'kz' %}Шығу{% else %}Выйти{% endif %}</a>
+                {% else %}
+                    <a href="{% url 'login' %}">{% if request.session.lang == 'kz' %}Кіру{% else %}Войти{% endif %}</a>
+                    <a href="{% url 'register' %}">{% if request.session.lang == 'kz' %}Тіркелу{% else %}Регистрация{% endif %}</a>
+                {% endif %}
+
+                <div class="lang-toggle">
+                    <a href="{% url 'set_lang' 'ru' %}" class="{% if request.session.lang != 'kz' %}active{% endif %}">RU</a>
+                    <a href="{% url 'set_lang' 'kz' %}" class="{% if request.session.lang == 'kz' %}active{% endif %}">KZ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

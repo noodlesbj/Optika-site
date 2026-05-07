@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load core_extras %}
+
+{% block content %}
+    <div class="hero" style="text-align: center; margin-bottom: 5rem; animation: fadeInDown 1s ease-out; background: var(--bg-card); padding: 4rem; border-radius: 32px; border: 1px solid var(--glass-border);">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">
+            {% if request.session.lang == 'kz' %}Оптика әлеміне қош келдіңіз{% else %}Добро пожаловать в мир оптики{% endif %}
+        </h1>
+        <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem;">
+            {% if request.session.lang == 'kz' %}Физиканың ең қызықты бөлімін бізбен бірге меңгеріңіз. Барлық дәрістер мен тесттер сізге қолжетімді.{% else %}Изучайте самый интересный раздел физики вместе с нами. Все лекции и тесты доступны для вас.{% endif %}
+        </p>
+        
+        <div style="display: flex; gap: 1.5rem; justify-content: center;">
+            <a href="#curriculum" class="btn btn-solid" style="padding: 1.2rem 3rem;">
+                {% if request.session.lang == 'kz' %}Оқуды бастау{% else %}Начать обучение{% endif %}
+            </a>
+            <a href="{% url 'comprehensive_quiz' %}" class="btn" style="padding: 1.2rem 3rem; border: 1px solid var(--secondary); color: var(--secondary); background: rgba(100, 255, 218, 0.05);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                {% if request.session.lang == 'kz' %}Жалпы тест{% else %}Общий тест{% endif %}
+            </a>
+        </div>
+    </div>
+
+    <div id="curriculum">
+        <h2 style="margin-bottom: 3rem; font-size: 2.2rem; display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 8px; height: 40px; background: var(--secondary); border-radius: 4px;"></div>
+            {% if request.session.lang == 'kz' %}Оқу бағдарламасы{% else %}Учебная программа{% endif %}
+        </h2>
+    
+    <div class="grid">
+        {% for item in topics_data %}
+            <a href="{% url 'lecture' item.topic.id %}" class="card-link" style="text-decoration: none;">
+                <div class="card" style="animation-delay: {{ forloop.counter0|add:1|multiply:0.1 }}s; height: 100%;">
+                    {% if item.best_score %}
+                        <div class="badge">{{ item.best_score.score }}/{{ item.best_score.total }} ✓</div>
+                    {% endif %}
+                    
+                    <div class="card-title" style="margin-top: 1rem; margin-bottom: 2rem;">
+                        <span style="color: var(--secondary); font-weight: 700; margin-right: 8px;">{{ item.topic.order }}.</span> 
+                        {% if request.session.lang == 'kz' %}
+                            {{ item.topic.title_kz }}
+                        {% else %}
+                            {{ item.topic.title_ru }}
+                        {% endif %}
+                    </div>
+                    
+                    <div class="btn btn-primary" style="margin-top: auto; width: 100%;">
+                        {% if request.session.lang == 'kz' %}Бастау{% else %}Начать{% endif %}
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

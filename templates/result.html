@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load core_extras %}
+
+{% block content %}
+    <div class="result-header" style="animation: fadeInDown 0.8s ease-out;">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">
+            {% if score >= total|multiply:0.8 %}🏆{% elif score >= total|multiply:0.5 %}👍{% else %}📚{% endif %}
+        </div>
+        <h1>{% if request.session.lang == 'kz' %}Сіздің нәтижеңіз{% else %}Ваш результат{% endif %}</h1>
+        
+        <div class="score-display {% if score >= total|multiply:0.5 %}score-good{% else %}score-bad{% endif %}" 
+             style="font-size: 5rem; font-weight: 800; margin: 2rem 0; font-family: 'Outfit';">
+            {{ score }} <span style="font-size: 2rem; color: var(--text-muted);">/ {{ total }}</span>
+        </div>
+        
+        <h2 style="color: var(--secondary); margin-bottom: 3rem;">
+            {% if request.session.lang == 'kz' %}
+                {{ topic.title_kz }}
+            {% else %}
+                {{ topic.title_ru }}
+            {% endif %}
+        </h2>
+    </div>
+
+    <h2 class="section-title">{% if request.session.lang == 'kz' %}Жауаптарды талдау{% else %}Анализ ответов{% endif %}</h2>
+
+    <div class="answers-review">
+        {% for item in q_data %}
+            <div class="result-item {% if item.is_correct %}result-correct{% else %}result-incorrect{% endif %}" 
+                 style="animation-delay: {{ forloop.counter0|multiply:0.1 }}s">
+                <div class="question-text" style="font-weight: 600; margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--white);">
+                    <span style="opacity: 0.5;">{{ forloop.counter }}.</span> 
+                    {% if request.session.lang == 'kz' %}
+                        {{ item.question.text_kz }}
+                    {% else %}
+                        {{ item.question.text_ru }}
+                    {% endif %}
+                </div>
+                
+                <div style="display: grid; gap: 0.5rem;">
+                    {% if not item.is_correct %}
+                        <div style="color: #ff5555; background: rgba(255, 85, 85, 0.1); padding: 0.8rem; border-radius: 8px; font-size: 0.95rem;">
+                            <span style="font-weight: 700; margin-right: 0.5rem;">✕</span>
+                            {% if item.user_choice %}
+                                {% if request.session.lang == 'kz' %}{{ item.user_choice.text_kz }}{% else %}{{ item.user_choice.text_ru }}{% endif %}
+                            {% else %}
+                                {% if request.session.lang == 'kz' %}Жауап берілмеген{% else %}Нет ответа{% endif %}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    
+                    <div style="color: var(--secondary); background: rgba(100, 255, 218, 0.1); padding: 0.8rem; border-radius: 8px; font-size: 0.95rem;">
+                        <span style="font-weight: 700; margin-right: 0.5rem;">✓</span>
+                        {% if request.session.lang == 'kz' %}
+                            {{ item.correct_choice.text_kz }}
+                        {% else %}
+                            {{ item.correct_choice.text_ru }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 4rem; padding-bottom: 4rem;">
+        {% if is_comprehensive %}
+            <a href="{% url 'home' %}" class="btn btn-solid" style="padding: 1.2rem 4rem;">
+                {% if request.session.lang == 'kz' %}Басты бетке{% else %}На главную{% endif %}
+            </a>
+        {% else %}
+            <a href="{% url 'lecture' topic.id %}" class="btn" style="color: var(--text-muted);">
+                {% if request.session.lang == 'kz' %}Дәріске оралу{% else %}Вернуться к лекции{% endif %}
+            </a>
+            <a href="{% url 'home' %}" class="btn btn-solid" style="padding: 1.2rem 4rem; margin-left: 1rem;">
+                {% if request.session.lang == 'kz' %}Басты бетке{% else %}На главную{% endif %}
+            </a>
+        {% endif %}
+    </div>
+
+    <!-- Celebration Effect for Good Scores -->
+    {% if score >= total|multiply:0.7 %}
+    <canvas id="confetti" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000;"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        window.onload = function() {
+            var duration = 3 * 1000;
+            var end = Date.now() + duration;
+
+            (function frame() {
+              confetti({
+                particleCount: 3,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: ['#64FFDA', '#7B61FF', '#FFFFFF']
+              });
+              confetti({
+                particleCount: 3,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: ['#64FFDA', '#7B61FF', '#FFFFFF']
+              });
+
+              if (Date.now() < end) {
+                requestAnimationFrame(frame);
+              }
+            }());
+        };
+    </script>
+    {% endif %}
+{% endblock %}

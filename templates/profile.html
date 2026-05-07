@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load core_extras %}
+
+{% block content %}
+    <div style="margin-bottom: 3rem;">
+        <h1 style="margin-bottom: 0.5rem;">
+            {% if request.session.lang == 'kz' %}Профиль{% else %}Профиль{% endif %}
+        </h1>
+        <p style="color: var(--secondary); font-size: 1.2rem; font-weight: 600;">{{ user.username }}</p>
+    </div>
+    
+    <div class="card" style="padding: 2.5rem;">
+        <h2 class="section-title" style="margin-bottom: 2rem; text-align: left; font-size: 1.5rem;">
+            {% if request.session.lang == 'kz' %}Тест тарихы{% else %}История тестов{% endif %}
+        </h2>
+        
+        {% if results %}
+            <div style="overflow-x: auto;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>{% if request.session.lang == 'kz' %}Тақырып{% else %}Тема{% endif %}</th>
+                            <th>{% if request.session.lang == 'kz' %}Нәтиже{% else %}Результат{% endif %}</th>
+                            <th>{% if request.session.lang == 'kz' %}Күні{% else %}Дата{% endif %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for r in results %}
+                            <tr>
+                                <td style="font-weight: 500;">
+                                    {% if request.session.lang == 'kz' %}
+                                        {{ r.topic.title_kz }}
+                                    {% else %}
+                                        {{ r.topic.title_ru }}
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <span style="font-family: 'Outfit'; font-weight: 700; color: {% if r.score >= r.total|multiply:0.7 %}var(--secondary){% elif r.score >= r.total|multiply:0.4 %}var(--accent){% else %}#ff5555{% endif %};">
+                                        {{ r.score }} / {{ r.total }}
+                                    </span>
+                                </td>
+                                <td style="color: var(--text-muted); font-size: 0.9rem;">{{ r.date_taken|date:"d.m.Y H:i" }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div style="text-align: center; padding: 3rem 0;">
+                <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;">📋</div>
+                <p style="color: var(--text-muted);">
+                    {% if request.session.lang == 'kz' %}
+                        Сіз әлі ешқандай тест тапсырмадыңыз. Дәрістерді оқып, біліміңізді тексеріңіз!
+                    {% else %}
+                        Вы еще не прошли ни одного теста. Изучите лекции и проверьте свои знания!
+                    {% endif %}
+                </p>
+                <a href="{% url 'home' %}" class="btn btn-primary" style="margin-top: 1.5rem;">
+                    {% if request.session.lang == 'kz' %}Дәрістерге өту{% else %}Перейти к лекциям{% endif %}
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

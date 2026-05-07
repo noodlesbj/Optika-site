@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="max-width: 450px; margin: 4rem auto; animation: fadeIn 0.8s ease-out;">
+        <div class="card" style="padding: 3rem; background: var(--primary-light); border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+            <h2 style="margin-bottom: 2.5rem; text-align: center; font-size: 2rem; font-weight: 700; color: var(--white);">
+                {% if request.session.lang == 'kz' %}Кіру{% else %}Вход в систему{% endif %}
+            </h2>
+            
+            <form method="post">
+                {% csrf_token %}
+                
+                {% for field in form %}
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label class="form-label" for="{{ field.id_for_label }}" style="margin-bottom: 0.8rem; display: block; font-weight: 500; color: var(--text-muted);">
+                            {{ field.label }}
+                        </label>
+                        {{ field }}
+                        {% if field.errors %}
+                            <div style="color: #ff5555; font-size: 0.85rem; margin-top: 0.5rem; background: rgba(255,85,85,0.1); padding: 0.5rem 1rem; border-radius: 6px;">
+                                {{ field.errors }}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                
+                <button type="submit" class="btn btn-solid" style="width: 100%; padding: 1rem; font-size: 1.1rem; margin-top: 1rem; box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2); position: relative; z-index: 10;">
+                    {% if request.session.lang == 'kz' %}Кіру{% else %}Войти{% endif %}
+                </button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem; color: var(--text-muted); font-size: 0.95rem;">
+                {% if request.session.lang == 'kz' %}
+                    Аккаунтыңыз жоқ па? <a href="{% url 'register' %}" style="color: var(--secondary); font-weight: 600; text-decoration: none; margin-left: 0.5rem;">Тіркелу</a>
+                {% else %}
+                    Нет аккаунта? <a href="{% url 'register' %}" style="color: var(--secondary); font-weight: 600; text-decoration: none; margin-left: 0.5rem;">Регистрация</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('input').forEach(input => {
+            input.classList.add('form-control');
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load core_extras %}
+
+{% block content %}
+    <a href="{% if is_comprehensive %}{% url 'home' %}{% else %}{% url 'lecture' topic.id %}{% endif %}" class="btn" style="padding: 0.5rem 0; color: var(--text-muted); margin-bottom: 2rem;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        {% if request.session.lang == 'kz' %}Артқа{% else %}Назад{% endif %}
+    </a>
+
+    <div style="margin-bottom: 3rem;">
+        <h1 style="margin-bottom: 1rem;">
+            {% if request.session.lang == 'kz' %}
+                {{ topic.title_kz }}
+            {% else %}
+                {{ topic.title_ru }}
+            {% endif %}
+        </h1>
+        <p style="color: var(--text-muted);">
+            {% if request.session.lang == 'kz' %}Барлық сұрақтарға жауап беріңіз{% else %}Ответьте на все вопросы{% endif %}
+        </p>
+    </div>
+    
+    <div class="progress-container" style="position: sticky; top: 1rem; z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+        <div class="progress-bar" style="width: 100%;"></div>
+    </div>
+    
+    <form method="post" style="margin-top: 2rem;">
+        {% csrf_token %}
+        
+        {% for q in questions %}
+            <div class="question-card" style="animation-delay: {{ forloop.counter0|multiply:0.1 }}s">
+                <div class="question-text" style="font-size: 1.25rem; font-weight: 600; color: var(--white);">
+                    <span style="color: var(--secondary); margin-right: 0.5rem;">{{ forloop.counter }}.</span> 
+                    {% if request.session.lang == 'kz' %}
+                        {{ q.text_kz }}
+                    {% else %}
+                        {{ q.text_ru }}
+                    {% endif %}
+                </div>
+                
+                <div class="choices" style="display: grid; gap: 0.8rem; margin-top: 1.5rem;">
+                    {% for choice in q.choice_set.all %}
+                        <label class="choice-label" style="display: flex; align-items: center; cursor: pointer; padding: 1.2rem; background: rgba(255,255,255,0.03); border-radius: 12px; transition: all 0.2s ease; border: 1px solid rgba(255,255,255,0.05);">
+                            <input type="radio" name="question_{{ q.id }}" value="{{ choice.id }}" required style="margin-right: 1rem; accent-color: var(--secondary); width: 1.2rem; height: 1.2rem;">
+                            <span style="color: var(--text-main); font-size: 1rem;">
+                                {% if request.session.lang == 'kz' %}
+                                    {{ choice.text_kz }}
+                                {% else %}
+                                    {{ choice.text_ru }}
+                                {% endif %}
+                            </span>
+                        </label>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        
+        <div style="position: sticky; bottom: 2rem; text-align: center; margin-top: 4rem;">
+            <button type="submit" class="btn btn-solid" style="padding: 1.2rem 5rem; font-size: 1.2rem; box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);">
+                {% if request.session.lang == 'kz' %}Жауаптарды жіберу{% else %}Отправить ответы{% endif %}
+            </button>
+        </div>
+    </form>
+
+    <style>
+        .choice-label:hover {
+            background: rgba(100, 255, 218, 0.05) !important;
+            border-color: rgba(100, 255, 218, 0.3) !important;
+            transform: translateX(5px);
+        }
+        input[type="radio"]:checked + span {
+            color: var(--secondary) !important;
+            font-weight: 600;
+        }
+    </style>
+{% endblock %}

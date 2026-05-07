@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load core_extras %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="result-header" style="margin-bottom: 4rem; position: relative; overflow: hidden; animation: fadeIn 0.8s ease-out;">
+    <div style="font-size: 5rem; margin-bottom: 1.5rem; filter: drop-shadow(0 0 20px var(--secondary-glow));">🔬</div>
+    <h1 style="margin-bottom: 1rem;">
+        {% if request.session.lang == 'kz' %}Оптика әлемі{% else %}Мир оптики{% endif %}
+    </h1>
+    <p style="font-size: 1.3rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.6;">
+        {% if request.session.lang == 'kz' %}
+            Жарық туралы физиканың бөлімі — оның табиғаты, таралуы және заттармен өзара әрекеттесуі. Біздің платформа арқылы осы ғажайып әлемді бірге зерттеңіз.
+        {% else %}
+            Раздел физики, изучающий природу света, его распространение и взаимодействие с веществом. Откройте для себя этот удивительный мир вместе с нашей платформой.
+        {% endif %}
+    </p>
+</div>
+
+<!-- Key Concepts -->
+<div class="grid" style="margin-bottom: 4rem;">
+    <div class="card" style="border-top: 4px solid var(--secondary);">
+        <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">📖</div>
+        <h2 class="card-title">
+            {% if request.session.lang == 'kz' %}Оптика дегеніміз не?{% else %}Что такое оптика?{% endif %}
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">
+            {% if request.session.lang == 'kz' %}
+                Оптика — жарық құбылыстарын зерттейтін ілім. Ол бізге айналаны көруге, телескоптар арқылы жұлдыздарды бақылауға және оптикалық талшықтар арқылы ақпарат таратуға мүмкіндік береді.
+            {% else %}
+                Оптика — это наука о свете. Она позволяет нам видеть мир, наблюдать за звездами через телескопы и передавать информацию по всему миру с помощью оптоволокна.
+            {% endif %}
+        </p>
+    </div>
+    <div class="card" style="border-top: 4px solid var(--accent);">
+        <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">⚡</div>
+        <h2 class="card-title">
+            {% if request.session.lang == 'kz' %}Жарықтың жылдамдығы{% else %}Скорость света{% endif %}
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">
+            {% if request.session.lang == 'kz' %}
+                Вакуумдағы жарық жылдамдығы — ғаламның негізгі тұрақтысы: <span style="color: var(--secondary); font-weight: 700;">c ≈ 300 000 км/с</span>. Бұл — табиғаттағы ең жоғары жылдамдық.
+            {% else %}
+                Скорость света в вакууме — фундаментальная константа: <span style="color: var(--secondary); font-weight: 700;">c ≈ 300 000 км/с</span>. Это предельная скорость во Вселенной.
+            {% endif %}
+        </p>
+    </div>
+</div>
+
+<!-- Sections -->
+<h2 class="section-title">
+    {% if request.session.lang == 'kz' %}Негізгі бағыттар{% else %}Основные направления{% endif %}
+</h2>
+<div class="grid" style="margin-bottom: 4rem;">
+    <div class="card" style="background: linear-gradient(135deg, rgba(100, 255, 218, 0.1), transparent);">
+        <h3 style="color: var(--secondary); margin-bottom: 1rem; font-size: 1.5rem;">
+            {% if request.session.lang == 'kz' %}Геометриялық{% else %}Геометрическая{% endif %}
+        </h3>
+        <p style="font-size: 1rem; color: var(--text-muted);">
+            {% if request.session.lang == 'kz' %}
+                Жарықтың түзу сызықты таралуын, шағылу және сыну заңдарын зерттейді.
+            {% else %}
+                Изучает законы распространения света в прозрачных средах и его отражение от зеркальных поверхностей.
+            {% endif %}
+        </p>
+    </div>
+    <div class="card" style="background: linear-gradient(135deg, rgba(189, 147, 249, 0.1), transparent);">
+        <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.5rem;">
+            {% if request.session.lang == 'kz' %}Толқындық{% else %}Волновая{% endif %}
+        </h3>
+        <p style="font-size: 1rem; color: var(--text-muted);">
+            {% if request.session.lang == 'kz' %}
+                Интерференция, дифракция және поляризация секілді толқындық құбылыстарды қарастырады.
+            {% else %}
+                Исследует явления, в которых проявляется волновая природа света: интерференцию и дифракцию.
+            {% endif %}
+        </p>
+    </div>
+    <div class="card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent);">
+        <h3 style="color: var(--white); margin-bottom: 1rem; font-size: 1.5rem;">
+            {% if request.session.lang == 'kz' %}Кванттық{% else %}Квантовая{% endif %}
+        </h3>
+        <p style="font-size: 1rem; color: var(--text-muted);">
+            {% if request.session.lang == 'kz' %}
+                Жарықтың бөлшектік табиғатын және оның затпен өзара әрекеттесуін зерттейді.
+            {% else %}
+                Изучает взаимодействие света с веществом на уровне отдельных частиц — фотонов.
+            {% endif %}
+        </p>
+    </div>
+</div>
+
+<!-- Scientists -->
+<h2 class="section-title">
+    {% if request.session.lang == 'kz' %}Ұлы ғалымдар{% else %}Великие учёные{% endif %}
+</h2>
+<div class="grid" style="margin-bottom: 4rem;">
+    {% for scientist in scientists %}
+    <div class="card" style="text-align: center; padding: 2rem 1.5rem; animation-delay: {{ forloop.counter0|multiply:0.1 }}s">
+        <div style="font-size: 3.5rem; margin-bottom: 1rem; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">{{ scientist.emoji }}</div>
+        <div style="font-weight: 700; font-size: 1.2rem; color: var(--white); margin-bottom: 0.5rem;">{{ scientist.name }}</div>
+        <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; font-family: 'Outfit';">{{ scientist.years }}</div>
+        <div style="color: var(--secondary); font-size: 0.95rem; font-weight: 500;">
+            {% if request.session.lang == 'kz' %}{{ scientist.contribution_kz }}{% else %}{{ scientist.contribution_ru }}{% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Applications -->
+<h2 class="section-title">
+    {% if request.session.lang == 'kz' %}Заманауи қолданысы{% else %}Современное применение{% endif %}
+</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1.5rem; margin-bottom: 5rem;">
+    {% for app in applications %}
+    <div class="card" style="text-align: center; padding: 1.5rem 1rem; min-height: auto;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">{{ app.emoji }}</div>
+        <div style="font-weight: 600; font-size: 0.85rem; color: var(--text-main);">
+            {% if request.session.lang == 'kz' %}{{ app.name_kz }}{% else %}{{ app.name_ru }}{% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- CTA -->
+<div style="text-align: center; padding: 4rem; background: var(--primary-light); border-radius: 30px; border: 1px solid var(--glass-border);">
+    <h2 style="margin-bottom: 1.5rem; font-size: 2rem;">{% if request.session.lang == 'kz' %}Білім алуға дайынсыз ба?{% else %}Готовы к обучению?{% endif %}</h2>
+    <a href="{% url 'home' %}" class="btn btn-solid" style="padding: 1.2rem 4rem; font-size: 1.2rem;">
+        {% if request.session.lang == 'kz' %}Дәрістерге өту{% else %}Перейти к лекциям{% endif %}
+    </a>
+</div>
+
+{% endblock %}

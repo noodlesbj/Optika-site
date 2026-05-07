@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="animation: fadeIn 0.8s ease-out;">
+    <a href="{% url 'home' %}" style="display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; margin-bottom: 2rem; font-weight: 600; transition: var(--transition);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        {% if request.session.lang == 'kz' %}Артқа{% else %}Назад{% endif %}
+    </a>
+
+    <header style="margin-bottom: 4rem;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.2;">
+            {% if request.session.lang == 'kz' %}{{ topic.title_kz }}{% else %}{{ topic.title_ru }}{% endif %}
+        </h1>
+        <div style="height: 4px; width: 100px; background: var(--gradient); border-radius: 2px;"></div>
+    </header>
+
+    {% if topic.image %}
+    <div style="margin-bottom: 4rem; position: relative; border-radius: 30px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.4); border: 1px solid var(--glass-border); background: var(--bg-card); text-align: center; padding: 2rem;">
+        <img src="{{ topic.image.url }}" alt="Lecture Illustration" style="max-width: 100%; height: auto; border-radius: 20px;">
+        <div style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">
+            {% if request.session.lang == 'kz' %}Дәріс материалына иллюстрация{% else %}Иллюстрация к материалу лекции{% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="lecture-content" style="white-space: pre-line; line-height: 2; font-size: 1.15rem; letter-spacing: 0.01em; max-width: 900px; margin: 0 auto;">
+        {% if request.session.lang == 'kz' %}
+            {{ topic.content_kz|safe }}
+        {% else %}
+            {{ topic.content_ru|safe }}
+        {% endif %}
+    </div>
+
+    <div style="margin-top: 5rem; text-align: center; padding: 5rem 2rem; background: linear-gradient(135deg, rgba(100, 255, 218, 0.05), rgba(189, 147, 249, 0.05)); border-radius: 40px; border: 1px solid var(--glass-border);">
+        <h2 style="margin-bottom: 1.5rem; font-size: 2.2rem; color: var(--white);">{% if request.session.lang == 'kz' %}Біліміңізді тексеріңіз{% else %}Проверьте свои знания{% endif %}</h2>
+        <p style="color: var(--text-muted); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+            {% if request.session.lang == 'kz' %}Бұл тақырып бойынша тест тапсырып, меңгеру деңгейіңізді біліңіз.{% else %}Пройдите тест по этой теме, чтобы узнать свой уровень освоения материала.{% endif %}
+        </p>
+        <a href="{% url 'quiz' topic.id %}" class="btn btn-solid" style="padding: 1.5rem 4rem; font-size: 1.2rem; border-radius: 16px;">
+            {% if request.session.lang == 'kz' %}Тестті бастау{% else %}Начать тест{% endif %}
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 10px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </div>
+</div>
+{% endblock %}

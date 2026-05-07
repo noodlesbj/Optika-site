@@ -1,0 +1,7922 @@
+[
+    {
+        "model": "core.topic",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "title_kz": "Жарық деген не және жарық көздері",
+            "title_ru": "Что такое свет и источники света",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 1,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 1,
+        "fields": {
+            "question": 1,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 2,
+        "fields": {
+            "question": 1,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 3,
+        "fields": {
+            "question": 1,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 2,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 4,
+        "fields": {
+            "question": 2,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 5,
+        "fields": {
+            "question": 2,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 6,
+        "fields": {
+            "question": 2,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 3,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 7,
+        "fields": {
+            "question": 3,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 8,
+        "fields": {
+            "question": 3,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 9,
+        "fields": {
+            "question": 3,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 4,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 10,
+        "fields": {
+            "question": 4,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 11,
+        "fields": {
+            "question": 4,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 12,
+        "fields": {
+            "question": 4,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 5,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 13,
+        "fields": {
+            "question": 5,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 14,
+        "fields": {
+            "question": 5,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 15,
+        "fields": {
+            "question": 5,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 6,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 16,
+        "fields": {
+            "question": 6,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 17,
+        "fields": {
+            "question": 6,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 18,
+        "fields": {
+            "question": 6,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 7,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 19,
+        "fields": {
+            "question": 7,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 20,
+        "fields": {
+            "question": 7,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 21,
+        "fields": {
+            "question": 7,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 8,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 22,
+        "fields": {
+            "question": 8,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 23,
+        "fields": {
+            "question": 8,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 24,
+        "fields": {
+            "question": 8,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 9,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 25,
+        "fields": {
+            "question": 9,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 26,
+        "fields": {
+            "question": 9,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 27,
+        "fields": {
+            "question": 9,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 10,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 28,
+        "fields": {
+            "question": 10,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 29,
+        "fields": {
+            "question": 10,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 30,
+        "fields": {
+            "question": 10,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 11,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 31,
+        "fields": {
+            "question": 11,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 32,
+        "fields": {
+            "question": 11,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 33,
+        "fields": {
+            "question": 11,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 12,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 34,
+        "fields": {
+            "question": 12,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 35,
+        "fields": {
+            "question": 12,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 36,
+        "fields": {
+            "question": 12,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 13,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 37,
+        "fields": {
+            "question": 13,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 38,
+        "fields": {
+            "question": 13,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 39,
+        "fields": {
+            "question": 13,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 14,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 40,
+        "fields": {
+            "question": 14,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 41,
+        "fields": {
+            "question": 14,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 42,
+        "fields": {
+            "question": 14,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 15,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 43,
+        "fields": {
+            "question": 15,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 44,
+        "fields": {
+            "question": 15,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 45,
+        "fields": {
+            "question": 15,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 16,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 46,
+        "fields": {
+            "question": 16,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 47,
+        "fields": {
+            "question": 16,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 48,
+        "fields": {
+            "question": 16,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 17,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 49,
+        "fields": {
+            "question": 17,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 50,
+        "fields": {
+            "question": 17,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 51,
+        "fields": {
+            "question": 17,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 18,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 52,
+        "fields": {
+            "question": 18,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 53,
+        "fields": {
+            "question": 18,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 54,
+        "fields": {
+            "question": 18,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 19,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 55,
+        "fields": {
+            "question": 19,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 56,
+        "fields": {
+            "question": 19,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 57,
+        "fields": {
+            "question": 19,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 20,
+        "fields": {
+            "topic": 1,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 58,
+        "fields": {
+            "question": 20,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 59,
+        "fields": {
+            "question": 20,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 60,
+        "fields": {
+            "question": 20,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 2,
+        "fields": {
+            "order": 2,
+            "title_kz": "Жарықтың шағылуы. Айналар",
+            "title_ru": "Отражение света. Зеркала",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 21,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 61,
+        "fields": {
+            "question": 21,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 62,
+        "fields": {
+            "question": 21,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 63,
+        "fields": {
+            "question": 21,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 22,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 64,
+        "fields": {
+            "question": 22,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 65,
+        "fields": {
+            "question": 22,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 66,
+        "fields": {
+            "question": 22,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 23,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 67,
+        "fields": {
+            "question": 23,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 68,
+        "fields": {
+            "question": 23,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 69,
+        "fields": {
+            "question": 23,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 24,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 70,
+        "fields": {
+            "question": 24,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 71,
+        "fields": {
+            "question": 24,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 72,
+        "fields": {
+            "question": 24,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 25,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 73,
+        "fields": {
+            "question": 25,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 74,
+        "fields": {
+            "question": 25,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 75,
+        "fields": {
+            "question": 25,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 26,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 76,
+        "fields": {
+            "question": 26,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 77,
+        "fields": {
+            "question": 26,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 78,
+        "fields": {
+            "question": 26,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 27,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 79,
+        "fields": {
+            "question": 27,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 80,
+        "fields": {
+            "question": 27,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 81,
+        "fields": {
+            "question": 27,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 28,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 82,
+        "fields": {
+            "question": 28,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 83,
+        "fields": {
+            "question": 28,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 84,
+        "fields": {
+            "question": 28,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 29,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 85,
+        "fields": {
+            "question": 29,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 86,
+        "fields": {
+            "question": 29,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 87,
+        "fields": {
+            "question": 29,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 30,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 88,
+        "fields": {
+            "question": 30,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 89,
+        "fields": {
+            "question": 30,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 90,
+        "fields": {
+            "question": 30,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 31,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 91,
+        "fields": {
+            "question": 31,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 92,
+        "fields": {
+            "question": 31,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 93,
+        "fields": {
+            "question": 31,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 32,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 94,
+        "fields": {
+            "question": 32,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 95,
+        "fields": {
+            "question": 32,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 96,
+        "fields": {
+            "question": 32,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 33,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 97,
+        "fields": {
+            "question": 33,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 98,
+        "fields": {
+            "question": 33,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 99,
+        "fields": {
+            "question": 33,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 34,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 100,
+        "fields": {
+            "question": 34,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 101,
+        "fields": {
+            "question": 34,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 102,
+        "fields": {
+            "question": 34,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 35,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 103,
+        "fields": {
+            "question": 35,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 104,
+        "fields": {
+            "question": 35,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 105,
+        "fields": {
+            "question": 35,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 36,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 106,
+        "fields": {
+            "question": 36,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 107,
+        "fields": {
+            "question": 36,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 108,
+        "fields": {
+            "question": 36,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 37,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 109,
+        "fields": {
+            "question": 37,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 110,
+        "fields": {
+            "question": 37,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 111,
+        "fields": {
+            "question": 37,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 38,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 112,
+        "fields": {
+            "question": 38,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 113,
+        "fields": {
+            "question": 38,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 114,
+        "fields": {
+            "question": 38,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 39,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 115,
+        "fields": {
+            "question": 39,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 116,
+        "fields": {
+            "question": 39,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 117,
+        "fields": {
+            "question": 39,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 40,
+        "fields": {
+            "topic": 2,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 118,
+        "fields": {
+            "question": 40,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 119,
+        "fields": {
+            "question": 40,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 120,
+        "fields": {
+            "question": 40,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 3,
+        "fields": {
+            "order": 3,
+            "title_kz": "Жарықтың сынуы. Линзалар",
+            "title_ru": "Преломление света. Линзы",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 41,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 121,
+        "fields": {
+            "question": 41,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 122,
+        "fields": {
+            "question": 41,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 123,
+        "fields": {
+            "question": 41,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 42,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 124,
+        "fields": {
+            "question": 42,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 125,
+        "fields": {
+            "question": 42,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 126,
+        "fields": {
+            "question": 42,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 43,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 127,
+        "fields": {
+            "question": 43,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 128,
+        "fields": {
+            "question": 43,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 129,
+        "fields": {
+            "question": 43,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 44,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 130,
+        "fields": {
+            "question": 44,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 131,
+        "fields": {
+            "question": 44,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 132,
+        "fields": {
+            "question": 44,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 45,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 133,
+        "fields": {
+            "question": 45,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 134,
+        "fields": {
+            "question": 45,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 135,
+        "fields": {
+            "question": 45,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 46,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 136,
+        "fields": {
+            "question": 46,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 137,
+        "fields": {
+            "question": 46,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 138,
+        "fields": {
+            "question": 46,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 47,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 139,
+        "fields": {
+            "question": 47,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 140,
+        "fields": {
+            "question": 47,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 141,
+        "fields": {
+            "question": 47,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 48,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 142,
+        "fields": {
+            "question": 48,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 143,
+        "fields": {
+            "question": 48,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 144,
+        "fields": {
+            "question": 48,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 49,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 145,
+        "fields": {
+            "question": 49,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 146,
+        "fields": {
+            "question": 49,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 147,
+        "fields": {
+            "question": 49,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 50,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 148,
+        "fields": {
+            "question": 50,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 149,
+        "fields": {
+            "question": 50,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 150,
+        "fields": {
+            "question": 50,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 51,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 151,
+        "fields": {
+            "question": 51,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 152,
+        "fields": {
+            "question": 51,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 153,
+        "fields": {
+            "question": 51,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 52,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 154,
+        "fields": {
+            "question": 52,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 155,
+        "fields": {
+            "question": 52,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 156,
+        "fields": {
+            "question": 52,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 53,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 157,
+        "fields": {
+            "question": 53,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 158,
+        "fields": {
+            "question": 53,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 159,
+        "fields": {
+            "question": 53,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 54,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 160,
+        "fields": {
+            "question": 54,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 161,
+        "fields": {
+            "question": 54,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 162,
+        "fields": {
+            "question": 54,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 55,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 163,
+        "fields": {
+            "question": 55,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 164,
+        "fields": {
+            "question": 55,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 165,
+        "fields": {
+            "question": 55,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 56,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 166,
+        "fields": {
+            "question": 56,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 167,
+        "fields": {
+            "question": 56,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 168,
+        "fields": {
+            "question": 56,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 57,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 169,
+        "fields": {
+            "question": 57,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 170,
+        "fields": {
+            "question": 57,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 171,
+        "fields": {
+            "question": 57,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 58,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 172,
+        "fields": {
+            "question": 58,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 173,
+        "fields": {
+            "question": 58,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 174,
+        "fields": {
+            "question": 58,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 59,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 175,
+        "fields": {
+            "question": 59,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 176,
+        "fields": {
+            "question": 59,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 177,
+        "fields": {
+            "question": 59,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 60,
+        "fields": {
+            "topic": 3,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 178,
+        "fields": {
+            "question": 60,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 179,
+        "fields": {
+            "question": 60,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 180,
+        "fields": {
+            "question": 60,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 4,
+        "fields": {
+            "order": 4,
+            "title_kz": "Көз және оның оптикалық жүйесі",
+            "title_ru": "Глаз и его оптическая система",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 61,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 181,
+        "fields": {
+            "question": 61,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 182,
+        "fields": {
+            "question": 61,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 183,
+        "fields": {
+            "question": 61,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 62,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 184,
+        "fields": {
+            "question": 62,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 185,
+        "fields": {
+            "question": 62,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 186,
+        "fields": {
+            "question": 62,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 63,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 187,
+        "fields": {
+            "question": 63,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 188,
+        "fields": {
+            "question": 63,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 189,
+        "fields": {
+            "question": 63,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 64,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 190,
+        "fields": {
+            "question": 64,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 191,
+        "fields": {
+            "question": 64,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 192,
+        "fields": {
+            "question": 64,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 65,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 193,
+        "fields": {
+            "question": 65,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 194,
+        "fields": {
+            "question": 65,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 195,
+        "fields": {
+            "question": 65,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 66,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 196,
+        "fields": {
+            "question": 66,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 197,
+        "fields": {
+            "question": 66,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 198,
+        "fields": {
+            "question": 66,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 67,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 199,
+        "fields": {
+            "question": 67,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 200,
+        "fields": {
+            "question": 67,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 201,
+        "fields": {
+            "question": 67,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 68,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 202,
+        "fields": {
+            "question": 68,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 203,
+        "fields": {
+            "question": 68,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 204,
+        "fields": {
+            "question": 68,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 69,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 205,
+        "fields": {
+            "question": 69,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 206,
+        "fields": {
+            "question": 69,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 207,
+        "fields": {
+            "question": 69,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 70,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 208,
+        "fields": {
+            "question": 70,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 209,
+        "fields": {
+            "question": 70,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 210,
+        "fields": {
+            "question": 70,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 71,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 211,
+        "fields": {
+            "question": 71,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 212,
+        "fields": {
+            "question": 71,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 213,
+        "fields": {
+            "question": 71,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 72,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 214,
+        "fields": {
+            "question": 72,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 215,
+        "fields": {
+            "question": 72,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 216,
+        "fields": {
+            "question": 72,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 73,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 217,
+        "fields": {
+            "question": 73,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 218,
+        "fields": {
+            "question": 73,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 219,
+        "fields": {
+            "question": 73,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 74,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 220,
+        "fields": {
+            "question": 74,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 221,
+        "fields": {
+            "question": 74,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 222,
+        "fields": {
+            "question": 74,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 75,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 223,
+        "fields": {
+            "question": 75,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 224,
+        "fields": {
+            "question": 75,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 225,
+        "fields": {
+            "question": 75,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 76,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 226,
+        "fields": {
+            "question": 76,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 227,
+        "fields": {
+            "question": 76,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 228,
+        "fields": {
+            "question": 76,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 77,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 229,
+        "fields": {
+            "question": 77,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 230,
+        "fields": {
+            "question": 77,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 231,
+        "fields": {
+            "question": 77,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 78,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 232,
+        "fields": {
+            "question": 78,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 233,
+        "fields": {
+            "question": 78,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 234,
+        "fields": {
+            "question": 78,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 79,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 235,
+        "fields": {
+            "question": 79,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 236,
+        "fields": {
+            "question": 79,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 237,
+        "fields": {
+            "question": 79,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 80,
+        "fields": {
+            "topic": 4,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 238,
+        "fields": {
+            "question": 80,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 239,
+        "fields": {
+            "question": 80,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 240,
+        "fields": {
+            "question": 80,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 5,
+        "fields": {
+            "order": 5,
+            "title_kz": "Жарық интерференциясы",
+            "title_ru": "Интерференция света",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 81,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 241,
+        "fields": {
+            "question": 81,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 242,
+        "fields": {
+            "question": 81,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 243,
+        "fields": {
+            "question": 81,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 82,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 244,
+        "fields": {
+            "question": 82,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 245,
+        "fields": {
+            "question": 82,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 246,
+        "fields": {
+            "question": 82,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 83,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 247,
+        "fields": {
+            "question": 83,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 248,
+        "fields": {
+            "question": 83,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 249,
+        "fields": {
+            "question": 83,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 84,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 250,
+        "fields": {
+            "question": 84,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 251,
+        "fields": {
+            "question": 84,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 252,
+        "fields": {
+            "question": 84,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 85,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 253,
+        "fields": {
+            "question": 85,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 254,
+        "fields": {
+            "question": 85,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 255,
+        "fields": {
+            "question": 85,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 86,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 256,
+        "fields": {
+            "question": 86,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 257,
+        "fields": {
+            "question": 86,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 258,
+        "fields": {
+            "question": 86,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 87,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 259,
+        "fields": {
+            "question": 87,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 260,
+        "fields": {
+            "question": 87,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 261,
+        "fields": {
+            "question": 87,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 88,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 262,
+        "fields": {
+            "question": 88,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 263,
+        "fields": {
+            "question": 88,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 264,
+        "fields": {
+            "question": 88,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 89,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 265,
+        "fields": {
+            "question": 89,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 266,
+        "fields": {
+            "question": 89,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 267,
+        "fields": {
+            "question": 89,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 90,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 268,
+        "fields": {
+            "question": 90,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 269,
+        "fields": {
+            "question": 90,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 270,
+        "fields": {
+            "question": 90,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 91,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 271,
+        "fields": {
+            "question": 91,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 272,
+        "fields": {
+            "question": 91,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 273,
+        "fields": {
+            "question": 91,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 92,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 274,
+        "fields": {
+            "question": 92,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 275,
+        "fields": {
+            "question": 92,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 276,
+        "fields": {
+            "question": 92,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 93,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 277,
+        "fields": {
+            "question": 93,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 278,
+        "fields": {
+            "question": 93,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 279,
+        "fields": {
+            "question": 93,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 94,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 280,
+        "fields": {
+            "question": 94,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 281,
+        "fields": {
+            "question": 94,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 282,
+        "fields": {
+            "question": 94,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 95,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 283,
+        "fields": {
+            "question": 95,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 284,
+        "fields": {
+            "question": 95,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 285,
+        "fields": {
+            "question": 95,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 96,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 286,
+        "fields": {
+            "question": 96,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 287,
+        "fields": {
+            "question": 96,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 288,
+        "fields": {
+            "question": 96,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 97,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 289,
+        "fields": {
+            "question": 97,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 290,
+        "fields": {
+            "question": 97,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 291,
+        "fields": {
+            "question": 97,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 98,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 292,
+        "fields": {
+            "question": 98,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 293,
+        "fields": {
+            "question": 98,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 294,
+        "fields": {
+            "question": 98,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 99,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 295,
+        "fields": {
+            "question": 99,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 296,
+        "fields": {
+            "question": 99,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 297,
+        "fields": {
+            "question": 99,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 100,
+        "fields": {
+            "topic": 5,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 298,
+        "fields": {
+            "question": 100,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 299,
+        "fields": {
+            "question": 100,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 300,
+        "fields": {
+            "question": 100,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 6,
+        "fields": {
+            "order": 6,
+            "title_kz": "Жарық дифракциясы",
+            "title_ru": "Дифракция света",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 101,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 301,
+        "fields": {
+            "question": 101,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 302,
+        "fields": {
+            "question": 101,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 303,
+        "fields": {
+            "question": 101,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 102,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 304,
+        "fields": {
+            "question": 102,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 305,
+        "fields": {
+            "question": 102,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 306,
+        "fields": {
+            "question": 102,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 103,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 307,
+        "fields": {
+            "question": 103,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 308,
+        "fields": {
+            "question": 103,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 309,
+        "fields": {
+            "question": 103,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 104,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 310,
+        "fields": {
+            "question": 104,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 311,
+        "fields": {
+            "question": 104,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 312,
+        "fields": {
+            "question": 104,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 105,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 313,
+        "fields": {
+            "question": 105,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 314,
+        "fields": {
+            "question": 105,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 315,
+        "fields": {
+            "question": 105,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 106,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 316,
+        "fields": {
+            "question": 106,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 317,
+        "fields": {
+            "question": 106,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 318,
+        "fields": {
+            "question": 106,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 107,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 319,
+        "fields": {
+            "question": 107,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 320,
+        "fields": {
+            "question": 107,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 321,
+        "fields": {
+            "question": 107,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 108,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 322,
+        "fields": {
+            "question": 108,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 323,
+        "fields": {
+            "question": 108,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 324,
+        "fields": {
+            "question": 108,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 109,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 325,
+        "fields": {
+            "question": 109,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 326,
+        "fields": {
+            "question": 109,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 327,
+        "fields": {
+            "question": 109,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 110,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 328,
+        "fields": {
+            "question": 110,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 329,
+        "fields": {
+            "question": 110,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 330,
+        "fields": {
+            "question": 110,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 111,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 331,
+        "fields": {
+            "question": 111,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 332,
+        "fields": {
+            "question": 111,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 333,
+        "fields": {
+            "question": 111,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 112,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 334,
+        "fields": {
+            "question": 112,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 335,
+        "fields": {
+            "question": 112,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 336,
+        "fields": {
+            "question": 112,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 113,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 337,
+        "fields": {
+            "question": 113,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 338,
+        "fields": {
+            "question": 113,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 339,
+        "fields": {
+            "question": 113,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 114,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 340,
+        "fields": {
+            "question": 114,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 341,
+        "fields": {
+            "question": 114,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 342,
+        "fields": {
+            "question": 114,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 115,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 343,
+        "fields": {
+            "question": 115,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 344,
+        "fields": {
+            "question": 115,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 345,
+        "fields": {
+            "question": 115,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 116,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 346,
+        "fields": {
+            "question": 116,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 347,
+        "fields": {
+            "question": 116,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 348,
+        "fields": {
+            "question": 116,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 117,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 349,
+        "fields": {
+            "question": 117,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 350,
+        "fields": {
+            "question": 117,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 351,
+        "fields": {
+            "question": 117,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 118,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 352,
+        "fields": {
+            "question": 118,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 353,
+        "fields": {
+            "question": 118,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 354,
+        "fields": {
+            "question": 118,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 119,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 355,
+        "fields": {
+            "question": 119,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 356,
+        "fields": {
+            "question": 119,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 357,
+        "fields": {
+            "question": 119,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 120,
+        "fields": {
+            "topic": 6,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 358,
+        "fields": {
+            "question": 120,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 359,
+        "fields": {
+            "question": 120,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 360,
+        "fields": {
+            "question": 120,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 7,
+        "fields": {
+            "order": 7,
+            "title_kz": "Жарық дисперсиясы",
+            "title_ru": "Дисперсия света",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 121,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 361,
+        "fields": {
+            "question": 121,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 362,
+        "fields": {
+            "question": 121,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 363,
+        "fields": {
+            "question": 121,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 122,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 364,
+        "fields": {
+            "question": 122,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 365,
+        "fields": {
+            "question": 122,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 366,
+        "fields": {
+            "question": 122,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 123,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 367,
+        "fields": {
+            "question": 123,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 368,
+        "fields": {
+            "question": 123,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 369,
+        "fields": {
+            "question": 123,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 124,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 370,
+        "fields": {
+            "question": 124,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 371,
+        "fields": {
+            "question": 124,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 372,
+        "fields": {
+            "question": 124,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 125,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 373,
+        "fields": {
+            "question": 125,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 374,
+        "fields": {
+            "question": 125,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 375,
+        "fields": {
+            "question": 125,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 126,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 376,
+        "fields": {
+            "question": 126,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 377,
+        "fields": {
+            "question": 126,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 378,
+        "fields": {
+            "question": 126,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 127,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 379,
+        "fields": {
+            "question": 127,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 380,
+        "fields": {
+            "question": 127,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 381,
+        "fields": {
+            "question": 127,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 128,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 382,
+        "fields": {
+            "question": 128,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 383,
+        "fields": {
+            "question": 128,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 384,
+        "fields": {
+            "question": 128,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 129,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 385,
+        "fields": {
+            "question": 129,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 386,
+        "fields": {
+            "question": 129,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 387,
+        "fields": {
+            "question": 129,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 130,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 388,
+        "fields": {
+            "question": 130,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 389,
+        "fields": {
+            "question": 130,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 390,
+        "fields": {
+            "question": 130,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 131,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 391,
+        "fields": {
+            "question": 131,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 392,
+        "fields": {
+            "question": 131,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 393,
+        "fields": {
+            "question": 131,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 132,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 394,
+        "fields": {
+            "question": 132,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 395,
+        "fields": {
+            "question": 132,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 396,
+        "fields": {
+            "question": 132,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 133,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 397,
+        "fields": {
+            "question": 133,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 398,
+        "fields": {
+            "question": 133,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 399,
+        "fields": {
+            "question": 133,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 134,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 400,
+        "fields": {
+            "question": 134,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 401,
+        "fields": {
+            "question": 134,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 402,
+        "fields": {
+            "question": 134,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 135,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 403,
+        "fields": {
+            "question": 135,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 404,
+        "fields": {
+            "question": 135,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 405,
+        "fields": {
+            "question": 135,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 136,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 406,
+        "fields": {
+            "question": 136,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 407,
+        "fields": {
+            "question": 136,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 408,
+        "fields": {
+            "question": 136,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 137,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 409,
+        "fields": {
+            "question": 137,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 410,
+        "fields": {
+            "question": 137,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 411,
+        "fields": {
+            "question": 137,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 138,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 412,
+        "fields": {
+            "question": 138,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 413,
+        "fields": {
+            "question": 138,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 414,
+        "fields": {
+            "question": 138,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 139,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 415,
+        "fields": {
+            "question": 139,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 416,
+        "fields": {
+            "question": 139,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 417,
+        "fields": {
+            "question": 139,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 140,
+        "fields": {
+            "topic": 7,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 418,
+        "fields": {
+            "question": 140,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 419,
+        "fields": {
+            "question": 140,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 420,
+        "fields": {
+            "question": 140,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 8,
+        "fields": {
+            "order": 8,
+            "title_kz": "Жарық поляризациясы",
+            "title_ru": "Поляризация света",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 141,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 421,
+        "fields": {
+            "question": 141,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 422,
+        "fields": {
+            "question": 141,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 423,
+        "fields": {
+            "question": 141,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 142,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 424,
+        "fields": {
+            "question": 142,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 425,
+        "fields": {
+            "question": 142,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 426,
+        "fields": {
+            "question": 142,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 143,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 427,
+        "fields": {
+            "question": 143,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 428,
+        "fields": {
+            "question": 143,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 429,
+        "fields": {
+            "question": 143,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 144,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 430,
+        "fields": {
+            "question": 144,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 431,
+        "fields": {
+            "question": 144,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 432,
+        "fields": {
+            "question": 144,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 145,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 433,
+        "fields": {
+            "question": 145,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 434,
+        "fields": {
+            "question": 145,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 435,
+        "fields": {
+            "question": 145,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 146,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 436,
+        "fields": {
+            "question": 146,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 437,
+        "fields": {
+            "question": 146,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 438,
+        "fields": {
+            "question": 146,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 147,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 439,
+        "fields": {
+            "question": 147,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 440,
+        "fields": {
+            "question": 147,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 441,
+        "fields": {
+            "question": 147,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 148,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 442,
+        "fields": {
+            "question": 148,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 443,
+        "fields": {
+            "question": 148,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 444,
+        "fields": {
+            "question": 148,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 149,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 445,
+        "fields": {
+            "question": 149,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 446,
+        "fields": {
+            "question": 149,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 447,
+        "fields": {
+            "question": 149,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 150,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 448,
+        "fields": {
+            "question": 150,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 449,
+        "fields": {
+            "question": 150,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 450,
+        "fields": {
+            "question": 150,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 151,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 451,
+        "fields": {
+            "question": 151,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 452,
+        "fields": {
+            "question": 151,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 453,
+        "fields": {
+            "question": 151,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 152,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 454,
+        "fields": {
+            "question": 152,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 455,
+        "fields": {
+            "question": 152,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 456,
+        "fields": {
+            "question": 152,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 153,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 457,
+        "fields": {
+            "question": 153,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 458,
+        "fields": {
+            "question": 153,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 459,
+        "fields": {
+            "question": 153,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 154,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 460,
+        "fields": {
+            "question": 154,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 461,
+        "fields": {
+            "question": 154,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 462,
+        "fields": {
+            "question": 154,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 155,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 463,
+        "fields": {
+            "question": 155,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 464,
+        "fields": {
+            "question": 155,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 465,
+        "fields": {
+            "question": 155,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 156,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 466,
+        "fields": {
+            "question": 156,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 467,
+        "fields": {
+            "question": 156,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 468,
+        "fields": {
+            "question": 156,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 157,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 469,
+        "fields": {
+            "question": 157,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 470,
+        "fields": {
+            "question": 157,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 471,
+        "fields": {
+            "question": 157,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 158,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 472,
+        "fields": {
+            "question": 158,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 473,
+        "fields": {
+            "question": 158,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 474,
+        "fields": {
+            "question": 158,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 159,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 475,
+        "fields": {
+            "question": 159,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 476,
+        "fields": {
+            "question": 159,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 477,
+        "fields": {
+            "question": 159,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 160,
+        "fields": {
+            "topic": 8,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 478,
+        "fields": {
+            "question": 160,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 479,
+        "fields": {
+            "question": 160,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 480,
+        "fields": {
+            "question": 160,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 9,
+        "fields": {
+            "order": 9,
+            "title_kz": "Фотоэффект және жарықтың кванттық қасиеттері",
+            "title_ru": "Фотоэффект и квантовые свойства света",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 161,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 481,
+        "fields": {
+            "question": 161,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 482,
+        "fields": {
+            "question": 161,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 483,
+        "fields": {
+            "question": 161,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 162,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 484,
+        "fields": {
+            "question": 162,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 485,
+        "fields": {
+            "question": 162,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 486,
+        "fields": {
+            "question": 162,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 163,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 487,
+        "fields": {
+            "question": 163,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 488,
+        "fields": {
+            "question": 163,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 489,
+        "fields": {
+            "question": 163,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 164,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 490,
+        "fields": {
+            "question": 164,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 491,
+        "fields": {
+            "question": 164,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 492,
+        "fields": {
+            "question": 164,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 165,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 493,
+        "fields": {
+            "question": 165,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 494,
+        "fields": {
+            "question": 165,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 495,
+        "fields": {
+            "question": 165,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 166,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 496,
+        "fields": {
+            "question": 166,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 497,
+        "fields": {
+            "question": 166,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 498,
+        "fields": {
+            "question": 166,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 167,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 499,
+        "fields": {
+            "question": 167,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 500,
+        "fields": {
+            "question": 167,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 501,
+        "fields": {
+            "question": 167,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 168,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 502,
+        "fields": {
+            "question": 168,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 503,
+        "fields": {
+            "question": 168,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 504,
+        "fields": {
+            "question": 168,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 169,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 505,
+        "fields": {
+            "question": 169,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 506,
+        "fields": {
+            "question": 169,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 507,
+        "fields": {
+            "question": 169,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 170,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 508,
+        "fields": {
+            "question": 170,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 509,
+        "fields": {
+            "question": 170,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 510,
+        "fields": {
+            "question": 170,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 171,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 511,
+        "fields": {
+            "question": 171,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 512,
+        "fields": {
+            "question": 171,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 513,
+        "fields": {
+            "question": 171,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 172,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 514,
+        "fields": {
+            "question": 172,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 515,
+        "fields": {
+            "question": 172,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 516,
+        "fields": {
+            "question": 172,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 173,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 517,
+        "fields": {
+            "question": 173,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 518,
+        "fields": {
+            "question": 173,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 519,
+        "fields": {
+            "question": 173,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 174,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 520,
+        "fields": {
+            "question": 174,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 521,
+        "fields": {
+            "question": 174,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 522,
+        "fields": {
+            "question": 174,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 175,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 523,
+        "fields": {
+            "question": 175,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 524,
+        "fields": {
+            "question": 175,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 525,
+        "fields": {
+            "question": 175,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 176,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 526,
+        "fields": {
+            "question": 176,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 527,
+        "fields": {
+            "question": 176,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 528,
+        "fields": {
+            "question": 176,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 177,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 529,
+        "fields": {
+            "question": 177,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 530,
+        "fields": {
+            "question": 177,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 531,
+        "fields": {
+            "question": 177,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 178,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 532,
+        "fields": {
+            "question": 178,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 533,
+        "fields": {
+            "question": 178,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 534,
+        "fields": {
+            "question": 178,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 179,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 535,
+        "fields": {
+            "question": 179,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 536,
+        "fields": {
+            "question": 179,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 537,
+        "fields": {
+            "question": 179,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 180,
+        "fields": {
+            "topic": 9,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 538,
+        "fields": {
+            "question": 180,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 539,
+        "fields": {
+            "question": 180,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 540,
+        "fields": {
+            "question": 180,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.topic",
+        "pk": 10,
+        "fields": {
+            "order": 10,
+            "title_kz": "Қазіргі заманғы лазерлік технологиялар",
+            "title_ru": "Современные лазерные технологии",
+            "content_kz": "Дәріс мазмұны...",
+            "content_ru": "Содержание лекции...",
+            "image": "topic_images/schematic.png"
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 181,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық дегеніміз не?",
+            "text_ru": "Что такое свет?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 541,
+        "fields": {
+            "question": 181,
+            "text_kz": "Электромагниттік сәулелену",
+            "text_ru": "Электромагнитное излучение",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 542,
+        "fields": {
+            "question": 181,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 543,
+        "fields": {
+            "question": 181,
+            "text_kz": "Дыбыс толқыны",
+            "text_ru": "Звуковая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 182,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарықтың бөлшектері қалай аталады?",
+            "text_ru": "Как называются частицы света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 544,
+        "fields": {
+            "question": 182,
+            "text_kz": "Фотондар",
+            "text_ru": "Фотоны",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 545,
+        "fields": {
+            "question": 182,
+            "text_kz": "Электрондар",
+            "text_ru": "Электроны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 546,
+        "fields": {
+            "question": 182,
+            "text_kz": "Протондар",
+            "text_ru": "Протоны",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 183,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Адам көзі қабылдайтын жарықтың толқын ұзындығы:",
+            "text_ru": "Длина волны видимого света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 547,
+        "fields": {
+            "question": 183,
+            "text_kz": "380–760 нм",
+            "text_ru": "380–760 нм",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 548,
+        "fields": {
+            "question": 183,
+            "text_kz": "100–200 нм",
+            "text_ru": "100–200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 549,
+        "fields": {
+            "question": 183,
+            "text_kz": "800–1200 нм",
+            "text_ru": "800–1200 нм",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 184,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Вакуумдағы жарықтың жылдамдығы қандай?",
+            "text_ru": "Скорость света в вакууме:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 550,
+        "fields": {
+            "question": 184,
+            "text_kz": "3×10⁸ м/с",
+            "text_ru": "3×10⁸ м/с",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 551,
+        "fields": {
+            "question": 184,
+            "text_kz": "3×10⁶ м/с",
+            "text_ru": "3×10⁶ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 552,
+        "fields": {
+            "question": 184,
+            "text_kz": "3×10⁵ м/с",
+            "text_ru": "3×10⁵ м/с",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 185,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық көздері шығу тегіне қарай қалай бөлінеді?",
+            "text_ru": "На какие виды делятся источники света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 553,
+        "fields": {
+            "question": 185,
+            "text_kz": "Табиғи және жасанды",
+            "text_ru": "Естественные и искусственные",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 554,
+        "fields": {
+            "question": 185,
+            "text_kz": "Электрлік және магниттік",
+            "text_ru": "Электрические и магнитные",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 555,
+        "fields": {
+            "question": 185,
+            "text_kz": "Қатты және сұйық",
+            "text_ru": "Твёрдые и жидкие",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 186,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Күн сәулесі Жерге шамамен қанша уақытта жетеді?",
+            "text_ru": "За какое время солнечный свет доходит до Земли?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 556,
+        "fields": {
+            "question": 186,
+            "text_kz": "8 минут",
+            "text_ru": "8 минут",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 557,
+        "fields": {
+            "question": 186,
+            "text_kz": "1 сағат",
+            "text_ru": "1 час",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 558,
+        "fields": {
+            "question": 186,
+            "text_kz": "1 секунд",
+            "text_ru": "1 секунда",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 187,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Суық жарық көзіне мысал:",
+            "text_ru": "Пример холодного источника света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 559,
+        "fields": {
+            "question": 187,
+            "text_kz": "Жарқырауық қоңыз",
+            "text_ru": "Светлячок",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 560,
+        "fields": {
+            "question": 187,
+            "text_kz": "Күн",
+            "text_ru": "Солнце",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 561,
+        "fields": {
+            "question": 187,
+            "text_kz": "Электр шамы",
+            "text_ru": "Электрическая лампа",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 188,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Оптиканың қай бөлімі жарықтың толқындық қасиеттерін зерттейді?",
+            "text_ru": "Какой раздел оптики изучает волновые свойства света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 562,
+        "fields": {
+            "question": 188,
+            "text_kz": "Толқындық оптика",
+            "text_ru": "Волновая оптика",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 563,
+        "fields": {
+            "question": 188,
+            "text_kz": "Геометриялық оптика",
+            "text_ru": "Геометрическая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 564,
+        "fields": {
+            "question": 188,
+            "text_kz": "Кванттық оптика",
+            "text_ru": "Квантовая оптика",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 189,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Люмен ненің өлшем бірлігі?",
+            "text_ru": "Люмен — это единица измерения чего?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 565,
+        "fields": {
+            "question": 189,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 566,
+        "fields": {
+            "question": 189,
+            "text_kz": "Жарық күші",
+            "text_ru": "Сила света",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 567,
+        "fields": {
+            "question": 189,
+            "text_kz": "Жарықтану",
+            "text_ru": "Освещённость",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 190,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық дегеніміз:",
+            "text_ru": "Свет — это:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 568,
+        "fields": {
+            "question": 190,
+            "text_kz": "Көлденең толқын",
+            "text_ru": "Поперечная волна",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 569,
+        "fields": {
+            "question": 190,
+            "text_kz": "Бойлық толқын",
+            "text_ru": "Продольная волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 570,
+        "fields": {
+            "question": 190,
+            "text_kz": "Механикалық толқын",
+            "text_ru": "Механическая волна",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 191,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық жылдамдығы су ішінде вакууммен салыстырғанда қалай?",
+            "text_ru": "Как соотносится скорость света в воде со скоростью в вакууме?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 571,
+        "fields": {
+            "question": 191,
+            "text_kz": "Азырақ",
+            "text_ru": "Меньше",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 572,
+        "fields": {
+            "question": 191,
+            "text_kz": "Көбірек",
+            "text_ru": "Больше",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 573,
+        "fields": {
+            "question": 191,
+            "text_kz": "Бірдей",
+            "text_ru": "Одинаково",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 192,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Ең ұзын толқын ұзындығы қай түске сәйкес?",
+            "text_ru": "У какого цвета самая большая длина волны?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 574,
+        "fields": {
+            "question": 192,
+            "text_kz": "Қызыл",
+            "text_ru": "Красный",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 575,
+        "fields": {
+            "question": 192,
+            "text_kz": "Күлгін",
+            "text_ru": "Фиолетовый",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 576,
+        "fields": {
+            "question": 192,
+            "text_kz": "Көк",
+            "text_ru": "Синий",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 193,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Фотонның массасы (тыныштық күйінде) неге тең?",
+            "text_ru": "Чему равна масса покоя фотона?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 577,
+        "fields": {
+            "question": 193,
+            "text_kz": "0",
+            "text_ru": "0",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 578,
+        "fields": {
+            "question": 193,
+            "text_kz": "1",
+            "text_ru": "1",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 579,
+        "fields": {
+            "question": 193,
+            "text_kz": "Электрон массасына тең",
+            "text_ru": "Массе электрона",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 194,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Көрінетін жарық спектрінде неше негізгі түс бар?",
+            "text_ru": "Сколько основных цветов в видимом спектре?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 580,
+        "fields": {
+            "question": 194,
+            "text_kz": "7",
+            "text_ru": "7",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 581,
+        "fields": {
+            "question": 194,
+            "text_kz": "5",
+            "text_ru": "5",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 582,
+        "fields": {
+            "question": 194,
+            "text_kz": "10",
+            "text_ru": "10",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 195,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық көзінен шыққан энергия қалай аталады?",
+            "text_ru": "Как называется энергия, излучаемая источником света?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 583,
+        "fields": {
+            "question": 195,
+            "text_kz": "Жарық ағыны",
+            "text_ru": "Световой поток",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 584,
+        "fields": {
+            "question": 195,
+            "text_kz": "Жылу",
+            "text_ru": "Тепло",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 585,
+        "fields": {
+            "question": 195,
+            "text_kz": "Магнит өрісі",
+            "text_ru": "Магнитное поле",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 196,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Ультракүлгін сәулелердің толқын ұзындығы көрінетін жарықтан қалай?",
+            "text_ru": "Длина волны ультрафиолетовых лучей по сравнению с видимым светом:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 586,
+        "fields": {
+            "question": 196,
+            "text_kz": "Қысқарақ",
+            "text_ru": "Короче",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 587,
+        "fields": {
+            "question": 196,
+            "text_kz": "Ұзынырақ",
+            "text_ru": "Длиннее",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 588,
+        "fields": {
+            "question": 196,
+            "text_kz": "Бірдей",
+            "text_ru": "Такая же",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 197,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Инфрақызыл сәулелер негізінен қандай әсер береді?",
+            "text_ru": "Какой основной эффект дают инфракрасные лучи?"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 589,
+        "fields": {
+            "question": 197,
+            "text_kz": "Жылулық",
+            "text_ru": "Тепловой",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 590,
+        "fields": {
+            "question": 197,
+            "text_kz": "Жарықтық",
+            "text_ru": "Световой",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 591,
+        "fields": {
+            "question": 197,
+            "text_kz": "Химиялық",
+            "text_ru": "Химический",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 198,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық ағынының өлшем бірлігі:",
+            "text_ru": "Единица измерения светового потока:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 592,
+        "fields": {
+            "question": 198,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 593,
+        "fields": {
+            "question": 198,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 594,
+        "fields": {
+            "question": 198,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 199,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарық күшіның өлшем бірлігі:",
+            "text_ru": "Единица измерения силы света:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 595,
+        "fields": {
+            "question": 199,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 596,
+        "fields": {
+            "question": 199,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 597,
+        "fields": {
+            "question": 199,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.question",
+        "pk": 200,
+        "fields": {
+            "topic": 10,
+            "text_kz": "Жарықтандырудың өлшем бірлігі:",
+            "text_ru": "Единица измерения освещённости:"
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 598,
+        "fields": {
+            "question": 200,
+            "text_kz": "Люкс",
+            "text_ru": "Люкс",
+            "is_correct": true
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 599,
+        "fields": {
+            "question": 200,
+            "text_kz": "Кандела",
+            "text_ru": "Кандела",
+            "is_correct": false
+        }
+    },
+    {
+        "model": "core.choice",
+        "pk": 600,
+        "fields": {
+            "question": 200,
+            "text_kz": "Люмен",
+            "text_ru": "Люмен",
+            "is_correct": false
+        }
+    }
+]
