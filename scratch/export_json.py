@@ -1,22 +1,37 @@
 import os
-import django
 import sys
+import django
 import json
-from django.core import serializers
 
+# Set up Django
 sys.path.append(os.getcwd())
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'optics_app.settings')
 django.setup()
 
-from core.models import Topic, Question, Choice
+from core.models import Topic
 
-def export_data():
-    data = serializers.serialize("json", list(Topic.objects.all()) + list(Question.objects.all()) + list(Choice.objects.all()), indent=2)
+def export_topics():
+    topics = Topic.objects.all().order_by('order')
+    data = []
+    for topic in topics:
+        data.append({
+            "model": "core.topic",
+            "pk": topic.pk,
+            "fields": {
+                "title_ru": topic.title_ru,
+                "title_kz": topic.title_kz,
+                "content_ru": topic.content_ru,
+                "content_kz": topic.content_kz,
+                "image": str(topic.image) if topic.image else "",
+                "order": topic.order
+            }
+        })
     
     os.makedirs('core/fixtures', exist_ok=True)
     with open('core/fixtures/initial_data.json', 'w', encoding='utf-8') as f:
-        f.write(data)
-    print("Data exported successfully to core/fixtures/initial_data.json")
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    
+    print(f"Exported {len(data)} topics to core/fixtures/initial_data.json")
 
 if __name__ == "__main__":
-    export_data()
+    export_topics()
