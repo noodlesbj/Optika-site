@@ -512,8 +512,17 @@ body.light-theme, body[data-theme="light"] {
 .light-theme p, body[data-theme="light"] p,
 .light-theme span, body[data-theme="light"] span,
 .light-theme .topic-title, body[data-theme="light"] .topic-title,
-.light-theme .lecture-title, body[data-theme="light"] .lecture-title {
+.light-theme .lecture-title, body[data-theme="light"] .lecture-title,
+.light-theme .hero-title, body[data-theme="light"] .hero-title {
     color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    background: none !important;
+}
+
+.light-theme .hero-card, body[data-theme="light"] .hero-card {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 .light-theme .text-muted, body[data-theme="light"] .text-muted,
