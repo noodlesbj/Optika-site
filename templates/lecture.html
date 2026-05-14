@@ -23,13 +23,28 @@
     </div>
     {% endif %}
 
-    <div class="lecture-content" style="white-space: pre-line; line-height: 2; font-size: 1.15rem; letter-spacing: 0.01em; max-width: 900px; margin: 0 auto;">
+    <div id="markdown-content" class="lecture-content" style="line-height: 2; font-size: 1.15rem; letter-spacing: 0.01em; max-width: 900px; margin: 0 auto;">
         {% if request.session.lang == 'kz' %}
-            {{ topic.content_kz|safe }}
+            {{ topic.content_kz }}
         {% else %}
-            {{ topic.content_ru|safe }}
+            {{ topic.content_ru }}
         {% endif %}
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentDiv = document.getElementById('markdown-content');
+            if (contentDiv) {
+                const rawMarkdown = contentDiv.innerHTML.trim();
+                // Decode HTML entities (like &gt; to >) if needed
+                const temp = document.createElement('textarea');
+                temp.innerHTML = rawMarkdown;
+                const decodedMarkdown = temp.value;
+                contentDiv.innerHTML = marked.parse(decodedMarkdown);
+            }
+        });
+    </script>
 
     <div style="margin-top: 5rem; text-align: center; padding: 5rem 2rem; background: linear-gradient(135deg, rgba(100, 255, 218, 0.05), rgba(189, 147, 249, 0.05)); border-radius: 40px; border: 1px solid var(--glass-border);">
         <h2 style="margin-bottom: 1.5rem; font-size: 2.2rem; color: var(--white);">{% if request.session.lang == 'kz' %}Біліміңізді тексеріңіз{% else %}Проверьте свои знания{% endif %}</h2>
