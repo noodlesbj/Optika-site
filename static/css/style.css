@@ -475,3 +475,51 @@ h1 {
     .nav-links { display: none; }
     .lecture-content { padding: 2rem; }
 }
+
+/* --- FINAL BOSS THEME OVERRIDE --- */
+[data-theme="light"], .light-theme {
+    --primary: #ffffff !important;
+    --primary-light: #f8fafc !important;
+    --primary-dark: #f1f5f9 !important;
+    --text-main: #0f172a !important;
+    --text-muted: #475569 !important;
+    --glass-bg: rgba(255, 255, 255, 0.8) !important;
+    --glass-border: rgba(15, 23, 42, 0.1) !important;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+}
+
+[data-theme="light"] body, .light-theme body {
+    background: var(--bg-gradient) !important;
+    color: var(--text-main) !important;
+}
+
+[data-theme="light"] .glass-card, .light-theme .glass-card,
+[data-theme="light"] .lecture-card, .light-theme .lecture-card,
+[data-theme="light"] .navbar, .light-theme .navbar {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    box-shadow: var(--card-shadow) !important;
+    color: var(--text-main) !important;
+}
+
+[data-theme="light"] .topic-title, .light-theme .topic-title,
+[data-theme="light"] .lecture-title, .light-theme .lecture-title,
+[data-theme="light"] h1, .light-theme h1,
+[data-theme="light"] h2, .light-theme h2,
+[data-theme="light"] h3, .light-theme h3 {
+    color: var(--text-main) !important;
+}
+
+[data-theme="light"] .nav-links a, .light-theme .nav-links a {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="light"] .nav-links a:hover, .light-theme .nav-links a:hover {
+    color: var(--secondary) !important;
+}
+
+[data-theme="light"] .lecture-content, .light-theme .lecture-content {
+    color: #1e293b !important;
+    line-height: 1.8 !important;
+}
